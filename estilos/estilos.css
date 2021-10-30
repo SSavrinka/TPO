@@ -550,7 +550,7 @@ body {
 
 .productos-img-16{
     background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
-    url('../imagenes/aros4.jpeg');
+    url('../imagenes/collar4.jpeg');
 	background-size: cover;
 	background-position: center;
 }
@@ -628,6 +628,13 @@ body {
 .productos-img-27{
     background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
     url('../imagenes/aros8.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-28{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/aros4.jpeg');
 	background-size: cover;
 	background-position: center;
 }
