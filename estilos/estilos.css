@@ -27,18 +27,22 @@ body {
 }
 
 .footer .footer-grid {
-	padding: 0;
+	padding: 0 auto;
     list-style: none;
     display: flex;
 	flex-wrap: wrap;
     text-align: center;
 	justify-content: space-evenly;
-    width: 100%;
+	height: fit-content;
 }
 
 .footer-grid li{
 	list-style: none;
 	padding: 0 0px 10px 0;
+}
+
+.enlace-redes{
+	font-size: 18px;
 }
 
 .footer-grid a{
@@ -195,7 +199,7 @@ body {
 .contenedor .contenido .contenedor-cont{
 	width: 100%;
 	display: grid;
-	grid-gap: 30px;
+	grid-gap: 10px;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, auto);
 
@@ -302,13 +306,18 @@ body {
 	grid-area: widget-1;
 }
 
+.contenedor-boton{
+	display: none;
+}
+.con
+
 /* GRID DE INFORMACION */
 
 .widget-info-grid{
 	list-style: none;
-	display: block;
+	display: flex;
 	text-align: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 	padding: 0% auto;
 	margin: 0% auto;
@@ -324,11 +333,11 @@ body {
 .widget-info-item i{
 	font-size: 30px;
 	color: #fff;
-	padding: 0px 0 0 0;
+	padding: 10px 0 0 0;
 }
 
 .widget-info-item h3{
-	padding: 0px 0;
+	padding: 3px 0;
 	font-size: 1.5vw;
 }
 
@@ -348,7 +357,7 @@ body {
 	background: #C89F9C;
 	color: #fff;
 	grid-area: footer;
-	padding: 40px;
+	padding: 40px 0 0 0;
 }
 
 #check{
@@ -360,8 +369,289 @@ body {
 	display: block;
 	visibility: hidden;
 }
+/* Productos */
 
-/* Botones Accesorios*/
+.grid-productos{
+	position: relative;
+	padding: 0%;
+    list-style: none;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    text-align: center;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+}
+
+.grid-productos:after{
+    clear: both;
+}
+
+.grid-productos:after, .grid-productos:before{
+    content: "";
+    display: table;
+}
+
+.grid-productos li{
+    width: 280px;
+    height: 280px;
+    margin: 20px;
+}
+
+.box-productos{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+.productos-menu{
+	list-style: none;
+}
+
+.box-productos:hover .lista-productos-menu{
+	border-radius: 4px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.473);
+	margin: 240px 0 0 0;
+	height: 40px;
+}
+.lista-productos-menu{
+	display: none;
+}
+.lista-productos-menu li{
+	margin: 30px;
+	position: relative;
+	height: 20px;
+}
+
+
+
+.box-productos a{
+	text-decoration: none;
+}
+
+.box-productos:hover{
+    transform: scale(1.10);
+}
+
+.productos-img-1{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/aros1.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-2{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/aros2.jpeg');
+	background-position: center;
+	background-size: cover;
+}
+
+.productos-img-3{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/anillos5.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-4{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/anillos2.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-5{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/anillos3.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-6{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/anillos4.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-7{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/collar1.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-8{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/collar2.jpeg');
+	background-size: cover;
+	background-position: bottom;
+}
+
+.productos-img-9{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/collar8.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-10{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/collar3.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-11{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/mates4.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-12{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/mates5.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-13{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/mates2.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-14{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/mates3.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-15{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/aros3.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-16{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/aros4.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-17{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/collar5.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-18{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/collar6.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-19{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/collar7.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-20{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/relojes.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-21{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/pulsera1.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-22{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/pulsera2.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-23{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/pulsera3.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-24{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/aros5.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-25{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/aros6.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-26{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/aros7.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.productos-img-27{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url('../imagenes/aros8.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.xop-info{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.tipo-producto{
+	background: #C89F9C;
+	color: #F2E9E4;
+	padding: 1%;
+	margin: 0 3%;
+	font-size: 25px;
+	border-radius: 4px;
+}
+
+/*  */
+
+
+
+/* Botones Accesorios */
 
 /*.xop-section{
 	margin: 0 auto;
@@ -370,7 +660,7 @@ body {
 .xop-section h2{
 	background: #C89F9C;
 	color: #F2E9E4;
-	padding: 1%;
+	padding: 0.5%;
 	font-size: 25px;
 	border-radius: 4px;
 }
@@ -420,42 +710,42 @@ body {
 
 .xop-img-1{
     background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
-    url('imagenes/aros1.jpeg');
+    url('../imagenes/aros1.jpeg');
 	background-size: cover;
 	background-position: center;
 }
 
 .xop-img-2{
     background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
-    url('imagenes/anillos4.jpeg');
+    url('../imagenes/anillos4.jpeg');
 	background-position: center;
 	background-size: cover;
 }
 
 .xop-img-3{
     background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
-    url('imagenes/mates3.jpeg');
+    url('../imagenes/mates3.jpeg');
 	background-size: cover;
 	background-position: center;
 }
 
 .xop-img-4{
     background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
-    url('imagenes/collar1.jpeg');
+    url('../imagenes/collar1.jpeg');
 	background-size: cover;
 	background-position: center;
 }
 
 .xop-img-5{
     background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
-    url('imagenes/collar3.jpeg');
+    url('../imagenes/relojes.jpeg');
 	background-size: cover;
 	background-position: center;
 }
 
 .xop-img-6{
     background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
-    url('imagenes/relojes.jpeg');
+    url('../imagenes/pulsera2.jpeg');
 	background-size: cover;
 	background-position: center;
 }
@@ -466,7 +756,7 @@ body {
     height: inherit;
 }
 .xop-box:hover h3{
-	display: none;
+	color: rgba(0, 0, 0, 0);
 }
 
 .xop-info h3{
@@ -478,7 +768,7 @@ body {
     line-height: 1.5;
 }
 
-/* Fin botones accesorios*/
+/* Fin botones accesorios */
 
 /* Slider Responsive */
 #slider {
@@ -513,6 +803,24 @@ body {
 
 /* fin slider responsive */
 
+/* Formulario iframe */
+
+.formulario{
+	width: 700px; 
+	position: relative; 
+	height: 850px; 
+	padding-top: 10px;
+}
+
+.formulario-contacto{
+	width: 700px; 
+	position: relative; 
+	height: 500px; 
+	padding-top: 10px;
+}
+
+/* Fin de iframe */
+
 /* FORMULARIO CREAR CUENTA*/
 
 .mb-4 label,
@@ -522,10 +830,12 @@ body {
 }
 
 .seccion1 .cuenta{
-	padding-top: 10%;
+	padding: 1%;
 	text-align: center;
-	color:#C89F9C;
+	color: #ece6e7;
+	background: #C89F9C;
 	font-weight: bold;
+	border-radius: 4px;
 }
 
 .seccion1 .encuentranos{
@@ -535,6 +845,7 @@ body {
 	border-radius: 4px;
 	color: #ece6e7;
 	font-weight: bold;
+	border-radius: 4px;
 }
 
 
@@ -559,8 +870,8 @@ body {
 		grid-template-rows: repeat(3, auto);
 	
 		grid-template-areas: "seccion1"
-							 "seccion2 seccion2" 
-							 "seccion2 seccion2" 
+							 "seccion2" 
+							 "seccion2" 
 	}
 	.contacto-footer{
 		display: block;
@@ -624,6 +935,27 @@ body {
 	#check:checked ~ .menu a{
 		display: block;
 	}
+
+	.formulario{
+		width: 100%; 
+		position: relative; 
+		height: 1000px; 
+		padding-top: 10px;
+	}
+
+	.formulario-contacto{
+		width: 100%; 
+		position: relative; 
+		height: 550px; 
+		padding-top: 10px;
+	}
+
+	.iframe-google{
+		width: 100%;
+		height: 300px;
+		position: relative;
+	}
+	
 }
 
 @media screen and (max-width: 810px){
